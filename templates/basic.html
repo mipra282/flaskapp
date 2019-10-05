@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo File</title>
+
+</head>
+<body>
+    <h1 class="jumbotron">Hi, you are inside template {{ name }}</h1>
+    <ul>
+        {% for item in mylist %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+   {% if 'California' in mylist %}
+    <p>Found claifornia</p>
+    {% else %}
+    <p>Did not find Califoria</p>
+    {% endif %}
+</body>
+</html>
